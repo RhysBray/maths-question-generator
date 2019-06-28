@@ -1,8 +1,72 @@
-body {
-  background-color: green;
+body main article div, body main article h2, body main article, body header,
+body footer, body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-body header {
-  color: orangered;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #0046af;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  background-color: #66afb4;
+}
+body header,
+body footer {
+  width: 100%;
+  height: 15vh;
+  padding: 10px;
+  background-color: white;
+  color: #0046af;
+  text-align: center;
+}
+body main article {
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  width: 50vh;
+  height: 50vh;
+  padding: 10px;
+  border-radius: 10px;
+}
+body main article h2,
+body main article input,
+body main article div {
+  width: 75%;
+  height: 25%;
+  border-radius: 10px;
+}
+body main article h2 {
+  border-top: solid #66afb4 2pt;
+  font-size: 30pt;
+}
+body main article input {
+  font-size: 30pt;
+  text-align: center;
+  border: solid #66afb4 2pt;
+}
+body main article div {
+  border-bottom: solid #66afb4 2pt;
+  font-size: 20pt;
+}
+body main article div:active {
+  background-color: #66afb4;
+  opacity: 0.7;
+  border-bottom: solid transparent 2pt;
+  transform: scale(1.1);
+}
+body footer {
+  font-size: 15pt;
+  font-weight: bolder;
 }
 
 /*# sourceMappingURL=main.css.map */
