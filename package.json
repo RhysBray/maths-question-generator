@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "build": "yarn sass . --watch"
+  },
+  "devDependencies": {
+    "sass": "^1.22.1"
+  }
+}
