@@ -29,12 +29,20 @@ body footer {
   color: #0046af;
   text-align: center;
 }
+body header .correct {
+  color: #009b00;
+  font-size: 33pt;
+}
+body header .wrong {
+  color: red;
+  font-size: 35pt;
+}
 body main article {
   flex-direction: column;
   justify-content: space-between;
   background-color: white;
-  width: 50vh;
-  height: 50vh;
+  width: 85vw;
+  height: 85vw;
   padding: 10px;
   border-radius: 10px;
 }
@@ -44,10 +52,11 @@ body main article div {
   width: 75%;
   height: 25%;
   border-radius: 10px;
+  border-bottom: solid #66afb4 2pt;
+  border-top: solid #66afb4 2pt;
 }
 body main article h2 {
-  border-top: solid #66afb4 2pt;
-  font-size: 30pt;
+  font-size: 40pt;
 }
 body main article input {
   font-size: 30pt;
@@ -55,7 +64,6 @@ body main article input {
   border: solid #66afb4 2pt;
 }
 body main article div {
-  border-bottom: solid #66afb4 2pt;
   font-size: 20pt;
 }
 body main article div:active {
@@ -67,6 +75,24 @@ body main article div:active {
 body footer {
   font-size: 15pt;
   font-weight: bolder;
+}
+
+@media only screen and (max-height: 450px) {
+  body header h1 {
+    font-size: 20pt;
+  }
+  body footer {
+    height: 7vh;
+  }
+  body main article {
+    height: 50vh;
+  }
+  body main article h2 {
+    font-size: 30pt;
+  }
+  body main article input {
+    font-size: 25pt;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

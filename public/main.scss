@@ -38,6 +38,14 @@ body {
     text-align: center;
   }
   header {
+    .correct {
+      color: rgb(0, 155, 0);
+      font-size: 33pt;
+    }
+    .wrong {
+      color: red;
+      font-size: 35pt;
+    }
   }
   main {
     article {
@@ -45,8 +53,8 @@ body {
       flex-direction: column;
       justify-content: space-between;
       background-color: $tertiary-color;
-      width: 50vh;
-      height: 50vh;
+      width: 85vw;
+      height: 85vw;
       padding: $base-padding;
       border-radius: 10px;
       h2,
@@ -55,11 +63,12 @@ body {
         width: 75%;
         height: 25%;
         border-radius: 10px;
+        border-bottom: solid $primary-color 2pt;
+        border-top: solid $primary-color 2pt;
       }
       h2 {
         @extend %flex-centered;
-        border-top: solid $primary-color 2pt;
-        font-size: 30pt;
+        font-size: 40pt;
       }
       input {
         font-size: 30pt;
@@ -68,7 +77,6 @@ body {
       }
       div {
         @extend %flex-centered;
-        border-bottom: solid $primary-color 2pt;
         font-size: 20pt;
         &:active {
           background-color: $primary-color;
@@ -82,5 +90,29 @@ body {
   footer {
     font-size: 15pt;
     font-weight: bolder;
+  }
+}
+
+@media only screen and (max-height: 450px) {
+  body {
+    header {
+      h1 {
+        font-size: 20pt;
+      }
+    }
+    footer {
+      height: 7vh;
+    }
+    main {
+      article {
+        height: 50vh;
+        h2 {
+          font-size: 30pt;
+        }
+        input {
+          font-size: 25pt;
+        }
+      }
+    }
   }
 }
