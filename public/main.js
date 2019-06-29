@@ -45,4 +45,10 @@ submitAnswer = () => {
   newRound();
 };
 
+const enterKey = event => {
+  if (event.keyCode == 13) {
+    submitAnswer();
+  }
+};
+
 initialiseGame();

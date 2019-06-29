@@ -18,7 +18,12 @@
         <h2 id="question">
           Question
         </h2>
-        <input id="answer" type="number" placeholder="Answer" />
+        <input
+          id="answer"
+          type="number"
+          placeholder="Answer"
+          onkeypress="enterKey(event)"
+        />
         <div id="submit" onclick="submitAnswer()">Submit Answer</div>
       </article>
     </main>
