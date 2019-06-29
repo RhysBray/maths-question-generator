@@ -77,12 +77,18 @@ body footer {
   font-weight: bolder;
 }
 
+@media only screen and (min-width: 425px) {
+  body main article {
+    height: 65vh;
+    width: 65vh;
+  }
+  body footer h3 {
+    font-size: 30pt;
+  }
+}
 @media only screen and (max-height: 450px) {
   body header h1 {
     font-size: 20pt;
-  }
-  body footer {
-    height: 7vh;
   }
   body main article {
     height: 50vh;
@@ -92,6 +98,9 @@ body footer {
   }
   body main article input {
     font-size: 25pt;
+  }
+  body footer {
+    height: 7vh;
   }
 }
 
