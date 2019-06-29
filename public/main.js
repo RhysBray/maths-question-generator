@@ -20,10 +20,23 @@ newRound = () => {
 const newQuestion = () => {
   randomNumber1 = randomNumber();
   randomNumber2 = randomNumber();
-  correctAnswer = randomNumber1 + randomNumber2;
-  //   randomOperator needed
+  let operator;
+  switch (Math.floor(Math.random() * 3)) {
+    case 1:
+      correctAnswer = randomNumber1 + randomNumber2;
+      operator = "+";
+      break;
+    case 2:
+      correctAnswer = randomNumber1 - randomNumber2;
+      operator = "-";
+      break;
+    default:
+      correctAnswer = randomNumber1 * randomNumber2;
+      operator = "*";
+  }
+  console.log(operator);
   document.getElementById("question").innerHTML =
-    randomNumber1 + " + " + randomNumber2 + "?";
+    randomNumber1 + operator + randomNumber2 + "?";
 };
 
 randomNumber = () => {
