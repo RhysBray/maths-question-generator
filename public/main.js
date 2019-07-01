@@ -34,7 +34,6 @@ const newQuestion = () => {
       correctAnswer = randomNumber1 * randomNumber2;
       operator = "*";
   }
-  console.log(operator);
   document.getElementById("question").innerHTML =
     randomNumber1 + operator + randomNumber2 + "?";
 };

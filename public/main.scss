@@ -1,7 +1,7 @@
 // variables
-$primary-color: rgb(102, 175, 180);
-$secondary-color: rgb(0, 70, 175);
-$tertiary-color: white;
+$primary-color: rgb(172, 137, 114);
+$secondary-color: hsl(30, 29%, 20%);
+$tertiary-color: rgb(227, 228, 226);
 
 $base-padding: 10px;
 
@@ -40,7 +40,7 @@ body {
   header {
     .correct {
       color: rgb(0, 155, 0);
-      font-size: 33pt;
+      font-size: 30pt;
     }
     .wrong {
       color: red;
@@ -64,24 +64,35 @@ body {
         height: 25%;
         border-radius: 10px;
         border-bottom: solid $primary-color 2pt;
-        border-top: solid $primary-color 2pt;
       }
       h2 {
         @extend %flex-centered;
         font-size: 40pt;
+        &:hover {
+          border-top: solid $primary-color 2pt;
+          background-color: $secondary-color;
+          color: $tertiary-color;
+          transform: scale(1.3);
+        }
       }
       input {
         font-size: 30pt;
         text-align: center;
         border: solid $primary-color 2pt;
+        background-color: $tertiary-color;
+        &:focus {
+          background-color: $secondary-color;
+          color: $tertiary-color;
+          transform: scale(1.1);
+        }
       }
       div {
         @extend %flex-centered;
         font-size: 20pt;
+        border-top: solid $primary-color 2pt;
         &:active {
-          background-color: $primary-color;
-          opacity: 0.7;
-          border-bottom: solid transparent 2pt;
+          background-color: $secondary-color;
+          color: $tertiary-color;
           transform: scale(1.1);
         }
       }
@@ -99,6 +110,11 @@ body {
       article {
         height: 65vh;
         width: 65vh;
+        h2 {
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
       }
     }
     footer {
