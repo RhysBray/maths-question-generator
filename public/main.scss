@@ -1,7 +1,7 @@
 // variables
-$primary-color: rgb(172, 137, 114);
-$secondary-color: hsl(30, 29%, 20%);
-$tertiary-color: rgb(227, 228, 226);
+$primary-color: rgb(133, 127, 156);
+$secondary-color: hsl(263, 100%, 40%);
+$tertiary-color: rgb(255, 248, 234);
 
 $base-padding: 10px;
 
@@ -57,6 +57,7 @@ body {
       height: 85vw;
       padding: $base-padding;
       border-radius: 10px;
+      box-shadow: 0px 7px 20px 0px rgba(6, 15, 141, 0.7);
       h2,
       input,
       div {

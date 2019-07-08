@@ -9,7 +9,7 @@ body footer, body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #423324;
+  color: #4e00cc;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
@@ -18,15 +18,15 @@ body {
   justify-content: space-between;
   width: 100vw;
   height: 100vh;
-  background-color: #ac8972;
+  background-color: #857f9c;
 }
 body header,
 body footer {
   width: 100%;
   height: 15vh;
   padding: 10px;
-  background-color: #e3e4e2;
-  color: #423324;
+  background-color: #fff8ea;
+  color: #4e00cc;
   text-align: center;
 }
 body header .correct {
@@ -40,11 +40,12 @@ body header .wrong {
 body main article {
   flex-direction: column;
   justify-content: space-between;
-  background-color: #e3e4e2;
+  background-color: #fff8ea;
   width: 85vw;
   height: 85vw;
   padding: 10px;
   border-radius: 10px;
+  box-shadow: 0px 7px 20px 0px rgba(6, 15, 141, 0.7);
 }
 body main article h2,
 body main article input,
@@ -52,35 +53,35 @@ body main article div {
   width: 75%;
   height: 25%;
   border-radius: 10px;
-  border-bottom: solid #ac8972 2pt;
+  border-bottom: solid #857f9c 2pt;
 }
 body main article h2 {
   font-size: 40pt;
 }
 body main article h2:hover {
-  border-top: solid #ac8972 2pt;
-  background-color: #423324;
-  color: #e3e4e2;
+  border-top: solid #857f9c 2pt;
+  background-color: #4e00cc;
+  color: #fff8ea;
   transform: scale(1.3);
 }
 body main article input {
   font-size: 30pt;
   text-align: center;
-  border: solid #ac8972 2pt;
-  background-color: #e3e4e2;
+  border: solid #857f9c 2pt;
+  background-color: #fff8ea;
 }
 body main article input:focus {
-  background-color: #423324;
-  color: #e3e4e2;
+  background-color: #4e00cc;
+  color: #fff8ea;
   transform: scale(1.1);
 }
 body main article div {
   font-size: 20pt;
-  border-top: solid #ac8972 2pt;
+  border-top: solid #857f9c 2pt;
 }
 body main article div:active {
-  background-color: #423324;
-  color: #e3e4e2;
+  background-color: #4e00cc;
+  color: #fff8ea;
   transform: scale(1.1);
 }
 body footer {
