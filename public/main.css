@@ -107,6 +107,28 @@ body footer {
     font-size: 30pt;
   }
 }
+@media only screen and (min-width: 768px) {
+  body header h1 {
+    font-size: 35pt;
+  }
+  body header .correct {
+    font-size: 40pt;
+  }
+  body header .wrong {
+    font-size: 45pt;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body header h1 {
+    font-size: 45pt;
+  }
+  body header .correct {
+    font-size: 50pt;
+  }
+  body header .wrong {
+    font-size: 55pt;
+  }
+}
 @media only screen and (max-height: 450px) {
   body header h1 {
     font-size: 20pt;

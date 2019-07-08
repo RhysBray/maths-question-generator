@@ -129,6 +129,37 @@ body {
     }
   }
 }
+@media only screen and (min-width: 768px) {
+  body {
+    header {
+      h1 {
+        font-size: 35pt;
+      }
+      .correct {
+        font-size: 40pt;
+      }
+      .wrong {
+        font-size: 45pt;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    header {
+      h1 {
+        font-size: 45pt;
+      }
+      .correct {
+        font-size: 50pt;
+      }
+      .wrong {
+        font-size: 55pt;
+      }
+    }
+  }
+}
 
 @media only screen and (max-height: 450px) {
   body {
