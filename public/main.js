@@ -21,7 +21,7 @@ const newQuestion = () => {
   randomNumber1 = randomNumber();
   randomNumber2 = randomNumber();
   let operator;
-  switch (Math.floor(Math.random() * 3)) {
+  switch (Math.floor(Math.random() * 4)) {
     case 1:
       correctAnswer = randomNumber1 + randomNumber2;
       operator = "+";
@@ -29,6 +29,15 @@ const newQuestion = () => {
     case 2:
       correctAnswer = randomNumber1 - randomNumber2;
       operator = "-";
+      break;
+    case 3:
+      correctAnswer = randomNumber1 / randomNumber2;
+      if ((correctAnswer % 0.25 === 0) | (correctAnswer % 0.1 === 0)) {
+        operator = "/";
+      } else {
+        correctAnswer = randomNumber1 * randomNumber2;
+        operator = "*";
+      }
       break;
     default:
       correctAnswer = randomNumber1 * randomNumber2;
